@@ -1,0 +1,37 @@
+{
+  "name": "tachyons-columns",
+  "version": "1.0.0",
+  "style": "src/tachyons-columns.css",
+  "description": "Tachyons CSS module of utilities for defining columns.",
+  "keywords": [
+    "tachyons",
+    "tachyons-css"
+  ],
+  "files": [
+    "src",
+    "css"
+  ],
+  "repository": "lowmess/tachyons-columns",
+  "author": {
+    "name": "Alec Lomas",
+    "email": "alec@lowmess.com",
+    "url": "http://lowmess.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tachyons-cli": "^0.5.0",
+    "watch": "^0.17.1"
+  },
+  "scripts": {
+    "start": "npm run build:watch",
+    "build:css": "tachyons src/tachyons-columns.css > css/tachyons-columns.css",
+    "build:minify": "tachyons src/tachyons-columns.css --minify > css/tachyons-columns.min.css",
+    "build:docs": "tachyons src/tachyons-columns.css --generate-docs --package=../../package.json > readme.md",
+    "build": "npm run build:css && npm run build:minify && npm run build:docs",
+    "build:watch": "watch 'npm run build' ./src"
+  },
+  "tachyonsModule": {
+    "category": "elements",
+    "isCore": false
+  }
+}
