@@ -1,6 +1,6 @@
 {
   "name": "tachyons-columns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "style": "src/tachyons-columns.css",
   "description": "Tachyons CSS module of utilities for defining columns.",
   "keywords": [
