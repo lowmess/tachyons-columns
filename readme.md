@@ -1,4 +1,4 @@
-# tachyons-columns 1.0.1
+# tachyons-columns 1.0.2
 
 Tachyons CSS module of utilities for defining columns.
 
