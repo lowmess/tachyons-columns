@@ -1,6 +1,6 @@
 {
   "name": "tachyons-columns",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "style": "src/tachyons-columns.css",
   "description": "Tachyons CSS module of utilities for defining columns.",
   "keywords": [
@@ -19,6 +19,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "postcss-cli": "^2.5.2",
     "tachyons-cli": "^0.5.0",
     "watch": "^0.17.1"
   },
@@ -26,12 +28,13 @@
     "start": "npm run build:watch",
     "build:css": "tachyons src/tachyons-columns.css > css/tachyons-columns.css",
     "build:minify": "tachyons src/tachyons-columns.css --minify > css/tachyons-columns.min.css",
+    "build:prefix": "postcss -u autoprefixer -r css/*.css",
     "build:docs": "tachyons src/tachyons-columns.css --generate-docs -a --package=../../package.json > readme.md",
-    "build": "npm run build:css && npm run build:minify && npm run build:docs",
+    "build": "npm run build:css && npm run build:minify && npm run build:prefix && npm run build:docs",
     "build:watch": "watch 'npm run build' ./src"
   },
   "tachyonsModule": {
-    "category": "elements",
+    "category": "layout",
     "isCore": false
   }
 }
