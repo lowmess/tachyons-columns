@@ -1,7 +1,8 @@
 {
   "name": "tachyons-columns",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "style": "src/tachyons-columns.css",
+  "main": "src/tachyons-columns.css",
   "description": "Tachyons CSS module of utilities for defining columns.",
   "keywords": [
     "tachyons",
@@ -19,7 +20,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.5",
+    "tachyons-cli": "^1.0.8",
     "watch": "^0.19.1"
   },
   "scripts": {
