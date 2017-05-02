@@ -1,10 +1,10 @@
-# tachyons-columns 1.0.4
+# tachyons-columns 1.0.5
 
 Tachyons CSS module of utilities for defining columns.
 
 #### Stats
 
-601 | 44 | 132
+600 | 44 | 132
 ---|---|---
 bytes | selectors | declarations
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-columns@1.0.4/css/tachyons-columns.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-columns@1.0.5/css/tachyons-columns.min.css" />
 ```
 
 ##### Locally
@@ -107,7 +107,7 @@ Running `$ npm start` will process the source css and place the built css in the
 .cg3 { -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
 .cg4 { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
 .cg5 { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 30em) {
  .cc2-ns { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
  .cc3-ns { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
  .cc4-ns { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
@@ -120,7 +120,7 @@ Running `$ npm start` will process the source css and place the built css in the
  .cg4-ns { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
  .cg5-ns { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
 }
-@media screen and (min-width: 48em) and (max-width: 64em) {
+@media screen and (min-width: 30em) and (max-width: 60em) {
  .cc2-m { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
  .cc3-m { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
  .cc4-m { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
@@ -133,7 +133,7 @@ Running `$ npm start` will process the source css and place the built css in the
  .cg4-m { -webkit-column-gap: 2rem; -moz-column-gap: 2rem; column-gap: 2rem; }
  .cg5-m { -webkit-column-gap: 4rem; -moz-column-gap: 4rem; column-gap: 4rem; }
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 60em) {
  .cc2-l { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
  .cc3-l { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
  .cc4-l { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
